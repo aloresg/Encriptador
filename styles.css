@@ -1,0 +1,149 @@
+body{
+    background-color: #F3F5FC;
+    padding: 40px;
+}
+
+button{
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+}
+
+button.btn-cifrar{
+    background-color: #0A3871;
+    color: white;
+    border-radius: 24px;
+    border: 0px;
+}
+
+button.btn-descifrar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+}
+
+button.btn-copiar{
+    background-color: white;
+    color: #0A3871;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    position: absolute;
+    bottom: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+#texto{
+    background-color: transparent;
+    font-size: 32px;
+    color: #0A3871;
+    border: 0px;
+    resize: none;
+    width: 100%;
+}
+
+.contenedor-principal{
+    float: left;
+    position: relative;
+}
+
+.contenedor-resultados{
+    float: right;
+    background-color: white;
+    position: relative;
+    border-radius: 32px;
+}
+
+#resultado{
+    font-size: 24px;
+    margin: 30px;
+    color: #495057;
+}
+
+.content {
+    display: inline-block; /* Cambia a block para diseño en columna */
+}
+
+.footer-container{
+    text-align: center;
+}
+
+.div-buttons{
+}
+
+h3{
+    text-align: center;
+    font-size: 24px;
+}
+p{
+    text-align: center;
+    font-size: 16px;
+}
+#div-sin-resultados{
+    margin: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (min-width: 1024px) {
+    .contenedor-principal{
+        width: 680px;
+        margin-left: 200px;
+        height: 600px;
+    }
+    .contenedor-resultados{
+        width: 400px;
+        height: 600px;
+    }
+    #texto{
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .contenedor-principal{
+        width: 100%;
+        height: 600px;
+    }
+    .contenedor-resultados{
+        width: 100%;
+    }
+    #texto{
+        height: 400px;
+    }
+    #imagen-sin-resultados{
+        display: none;
+    }
+    button.btn-descifrar{
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contenedor-principal{
+        width: 100%;
+        height: 600px;
+    }
+    .contenedor-resultados{
+        width: 100%;
+        margin-top: 40px;
+    }
+    #texto{
+        height: 400px;
+    }
+    #imagen-sin-resultados{
+        display: none;
+    }
+    button.btn-cifrar{
+        width: 100%;
+    }
+    button.btn-descifrar{
+        width: 100%;
+        margin-top: 30px;
+    }
+}

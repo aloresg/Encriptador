@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Lorena</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.svg" alt="">
+    </header>
+    <div class="content">
+        <div class="contenedor-principal">
+            <textarea name="texto" id="texto" placeholder="Ingrese el texto aquí" oninput="formatearTexto()"></textarea>
+            <div class="div-buttons">
+                <span id="error" style="color: #ff0000;"></span><br>
+                <img src="imagenes/icon_i.svg" style="margin-bottom: -3px;" alt="Info">
+                <span style="color: #495057;">Solo letras minúsculas y sin acentos</span><br>
+                <div style="margin-top: 10px;">
+                    <button class="btn-cifrar" id="cifrar" onclick="encriptar()">Encriptar</button>
+                    <button class="btn-descifrar"id="descifrar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-resultados">
+            <div id="div-sin-resultados">
+                <img id="imagen-sin-resultados" src="imagenes/sin_resultados.svg" alt="">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="resultado" name="resultado"></div>
+            <button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <div class="footer-container">
+            <a href="https://github.com/aloresg" target="_blank" aria-label="GitHub">
+                <img src="imagenes/github.svg" alt="GitHub" class="icon-small">
+            </a>
+            <a href="https://discord.gg/aloresg6" target="_blank" aria-label="Discord">
+                <img src="imagenes/discord.svg" alt="Discord" class="icon-small">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <img src="imagenes/linkedin.svg" alt="LinkedIn" class="icon-small">
+            </a>
+        </div>
+        <p>&copy; 2024 Sitio web de Andie Lorena Sánchez García @aloresg6. Todos los derechos reservados.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
