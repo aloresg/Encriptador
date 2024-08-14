@@ -49,7 +49,7 @@ function desencriptar() {
     for (let i = 0; i < llaves.length; i++) {
         let llave = llaves[i];
         let valor = llavesDesenciptador[llave]
-        texto = texto.replace(llave, valor)
+        texto = texto.replace(new RegExp(llave, 'g'), valor)
     }
     divResultado.textContent = texto
     btnCopiar.style.display = "block";
